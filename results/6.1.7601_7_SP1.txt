@@ -1,0 +1,46 @@
+ [.] Fetched 42 object types
+
+               Object type name | GENERIC_READ | GENERIC_WRITE | GENERIC_EXEC | GENERIC_ALL | VALID_MASK | SEC_REQUIRED
+               -----------------+--------------+---------------+--------------+-------------+------------+-------------
+                           Type |  0x00020000  |   0x00020000  |  0x00020000  |  0x000F0001 | 0x001F0001 | NO
+                      Directory |  0x00020003  |   0x0002000C  |  0x00020003  |  0x000F000F | 0x000F000F | YES
+                   SymbolicLink |  0x00020001  |   0x00020000  |  0x00020001  |  0x000F0001 | 0x000F0001 | NO
+                          Token |  0x0002001A  |   0x000201E0  |  0x00020005  |  0x000F01FF | 0x001F01FF | YES
+                            Job |  0x00020004  |   0x0002000B  |  0x00120000  |  0x001F001F | 0x001F001F | YES
+                        Process |  0x00020410  |   0x00020BEA  |  0x00121001  |  0x001FFFFF | 0x001FFFFF | YES
+                         Thread |  0x00020048  |   0x00020437  |  0x00120800  |  0x001FFFFF | 0x001FFFFF | YES
+                 UserApcReserve |  0x00020001  |   0x00020002  |  0x00020000  |  0x000F0003 | 0x000F0003 | NO
+            IoCompletionReserve |  0x00020001  |   0x00020002  |  0x00020000  |  0x000F0003 | 0x000F0003 | NO
+                    DebugObject |  0x00020001  |   0x00020002  |  0x00120000  |  0x001F000F | 0x001F000F | YES
+                          Event |  0x00020001  |   0x00020002  |  0x00120000  |  0x001F0003 | 0x001F0003 | NO
+                      EventPair |  0x00120000  |   0x00120000  |  0x00120000  |  0x001F0000 | 0x001F0000 | NO
+                         Mutant |  0x00020001  |   0x00020000  |  0x00120000  |  0x001F0001 | 0x001F0001 | NO
+                       Callback |  0x00020000  |   0x00020001  |  0x00120000  |  0x001F0001 | 0x001F0001 | NO
+                      Semaphore |  0x00020001  |   0x00020002  |  0x00120000  |  0x001F0003 | 0x001F0003 | NO
+                          Timer |  0x00020001  |   0x00020002  |  0x00120000  |  0x001F0003 | 0x001F0003 | NO
+                        Profile |  0x00020001  |   0x00020001  |  0x00020001  |  0x000F0001 | 0x000F0001 | NO
+                     KeyedEvent |  0x00020001  |   0x00020002  |  0x00020000  |  0x000F0003 | 0x001F0003 | NO
+                  WindowStation |  0x00020303  |   0x0002001C  |  0x00020060  |  0x000F037F | 0x000F037F | YES
+                        Desktop |  0x00020041  |   0x000200BE  |  0x00020100  |  0x000F01FF | 0x000F01FF | YES
+                TpWorkerFactory |  0x00020008  |   0x00020004  |  0x00020003  |  0x000F00FF | 0x000F00FF | NO
+                        Adapter |  0x00120089  |   0x00120116  |  0x001200A0  |  0x001F01FF | 0x001F01FF | NO
+                     Controller |  0x00120089  |   0x00120116  |  0x001200A0  |  0x001F01FF | 0x001F01FF | NO
+                         Device |  0x00120089  |   0x00120116  |  0x001200A0  |  0x001F01FF | 0x001F01FF | NO
+                         Driver |  0x00120089  |   0x00120116  |  0x001200A0  |  0x001F01FF | 0x001F01FF | NO
+                   IoCompletion |  0x00020001  |   0x00020002  |  0x00120000  |  0x001F0003 | 0x001F0003 | NO
+                           File |  0x00120089  |   0x00120116  |  0x001200A0  |  0x001F01FF | 0x001F01FF | NO
+                           TmTm |  0x00020001  |   0x0002001E  |  0x00020000  |  0x000F003F | 0x000F003F | YES
+                           TmTx |  0x00120001  |   0x0012003E  |  0x00120018  |  0x001F007F | 0x001F007F | YES
+                           TmRm |  0x00120001  |   0x0012007E  |  0x0012005C  |  0x001F007F | 0x001F007F | YES
+                           TmEn |  0x00020001  |   0x0002001E  |  0x0002001C  |  0x000F001F | 0x000F001F | YES
+                        Section |  0x00020005  |   0x00020002  |  0x00020008  |  0x000F001F | 0x001F001F | NO
+                        Session |  0x00020001  |   0x00020002  |  0x00120001  |  0x000F0003 | 0x001F0003 | YES
+                            Key |  0x00020019  |   0x00020006  |  0x00020039  |  0x000F003F | 0x001F003F | YES
+                      ALPC Port |  0x00020001  |   0x00010001  |  0x00000000  |  0x001F0001 | 0x001F0001 | NO
+                   PowerRequest |  0x00020000  |   0x00020000  |  0x00020000  |  0x001F0000 | 0x001F0000 | NO
+                        WmiGuid |  0x00000001  |   0x00000002  |  0x00000010  |  0x00120FFF | 0x001F0FFF | YES
+                EtwRegistration |  0x0002000D  |   0x00020062  |  0x00020E90  |  0x00020EFF | 0x00120FFF | YES
+                    EtwConsumer |  0x0002000D  |   0x00020062  |  0x00020E90  |  0x00020EFF | 0x00120FFF | YES
+           FilterConnectionPort |  0x00020001  |   0x00010001  |  0x00000000  |  0x001F0001 | 0x001F0001 | YES
+        FilterCommunicationPort |  0x00020001  |   0x00010001  |  0x00000000  |  0x001F0001 | 0x001F0001 | NO
+                      PcwObject |  0x00000001  |   0x00000002  |  0x00000000  |  0x000F0003 | 0x001F0003 | NO

@@ -1,0 +1,35 @@
+ [.] Fetched 31 object types
+
+               Object type name | GENERIC_READ | GENERIC_WRITE | GENERIC_EXEC | GENERIC_ALL | VALID_MASK | SEC_REQUIRED
+               -----------------+--------------+---------------+--------------+-------------+------------+-------------
+                           Type |  0x00020000  |   0x00020000  |  0x00020000  |  0x000F0001 | 0x001F0001 | NO
+                      Directory |  0x00020003  |   0x0002000C  |  0x00020003  |  0x000F000F | 0x000F000F | NO
+                   SymbolicLink |  0x00020001  |   0x00020000  |  0x00020001  |  0x000F0001 | 0x000F0001 | NO
+                          Token |  0x00020008  |   0x000200E0  |  0x00020000  |  0x000F01FF | 0x001F01FF | YES
+                        Process |  0x00020410  |   0x00020BEB  |  0x00120000  |  0x001F0FFF | 0x001F0FFF | YES
+                         Thread |  0x00020048  |   0x00020037  |  0x00120000  |  0x001F03FF | 0x001F03FF | YES
+                            Job |  0x00020004  |   0x0002000B  |  0x00120000  |  0x001F03FF | 0x001F001F | YES
+                    DebugObject |  0x00020001  |   0x00020002  |  0x00120000  |  0x001F000F | 0x001F000F | YES
+                          Event |  0x00020001  |   0x00020002  |  0x00120000  |  0x001F0003 | 0x001F0003 | NO
+                      EventPair |  0x00120000  |   0x00120000  |  0x00120000  |  0x001F0000 | 0x001F0000 | NO
+                         Mutant |  0x00020001  |   0x00020000  |  0x00120000  |  0x001F0001 | 0x001F0001 | NO
+                       Callback |  0x00020000  |   0x00020001  |  0x00120000  |  0x001F0001 | 0x001F0001 | NO
+                      Semaphore |  0x00020001  |   0x00020002  |  0x00120000  |  0x001F0003 | 0x001F0003 | NO
+                          Timer |  0x00020001  |   0x00020002  |  0x00120000  |  0x001F0003 | 0x001F0003 | NO
+                        Profile |  0x00020001  |   0x00020001  |  0x00020001  |  0x000F0001 | 0x000F0001 | NO
+                     KeyedEvent |  0x00020001  |   0x00020002  |  0x00020000  |  0x000F0003 | 0x001F0003 | NO
+                  WindowStation |  0x00020303  |   0x0002001C  |  0x00020060  |  0x000F037F | 0x000F037F | YES
+                        Desktop |  0x00020041  |   0x000200BE  |  0x00020100  |  0x000F01FF | 0x000F01FF | YES
+                        Section |  0x00020005  |   0x00020002  |  0x00020008  |  0x000F001F | 0x001F001F | NO
+                            Key |  0x00020019  |   0x00020006  |  0x00020019  |  0x000F003F | 0x001F003F | YES
+                           Port |  0x00020001  |   0x00010001  |  0x00000000  |  0x001F0001 | 0x001F0001 | NO
+                   WaitablePort |  0x00020001  |   0x00010001  |  0x00000000  |  0x001F0001 | 0x001F0001 | NO
+                        Adapter |  0x00120089  |   0x00120116  |  0x001200A0  |  0x001F01FF | 0x001F01FF | NO
+                     Controller |  0x00120089  |   0x00120116  |  0x001200A0  |  0x001F01FF | 0x001F01FF | NO
+                         Device |  0x00120089  |   0x00120116  |  0x001200A0  |  0x001F01FF | 0x001F01FF | NO
+                         Driver |  0x00120089  |   0x00120116  |  0x001200A0  |  0x001F01FF | 0x001F01FF | NO
+                   IoCompletion |  0x00020001  |   0x00020002  |  0x00120000  |  0x001F0003 | 0x001F0003 | NO
+                           File |  0x00120089  |   0x00120116  |  0x001200A0  |  0x001F01FF | 0x001F01FF | NO
+                        WmiGuid |  0x00000001  |   0x00000002  |  0x00000010  |  0x00120FFF | 0x001F0FFF | YES
+           FilterConnectionPort |  0x00020001  |   0x00010001  |  0x00000000  |  0x001F0001 | 0x001F0001 | YES
+        FilterCommunicationPort |  0x00020001  |   0x00010001  |  0x00000000  |  0x001F0001 | 0x001F0001 | NO
