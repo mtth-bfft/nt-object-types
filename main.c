@@ -118,8 +118,8 @@ int main()
    POBJECT_TYPE_INFORMATION pTypeInfo = &(pBuffer->ObjectTypeInformation[0]);
    for (ULONG i = 0; i < pBuffer->NumberOfObjectsTypes; i++)
    {
-      // Types are aligned on double word boundaries
-      DWORD dwOffsetToNextType = (pTypeInfo->TypeName.MaximumLength + 3) & ~3;
+      // Type structures are aligned on pointer size
+      DWORD dwOffsetToNextType = (pTypeInfo->TypeName.MaximumLength + sizeof(PVOID) - 1) & ~(sizeof(PVOID) - 1);
 
       printf(" %30.*ws |  0x%08X  |   0x%08X  |  0x%08X  |  0x%08X | 0x%08X | %s\n",
              pTypeInfo->TypeName.Length / 2,
